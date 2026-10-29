@@ -1,0 +1,14 @@
+resource_group_name = "rg-hybrid-vpn-lab"
+location            = "westeurope"
+
+# Change these if they overlap with existing networks.
+vnet1_address_space = "10.1.0.0/16"
+vnet2_address_space = "10.2.0.0/16"
+vnet3_address_space = "10.3.0.0/16"
+
+admin_username       = "azureadmin"
+admin_ssh_public_key = "ssh-ed25519 REPLACE_WITH_YOUR_PUBLIC_KEY"
+alert_email          = "ops@example.com"
+vm_size              = "Standard_B2s"
+
+# Provide vpn_shared_key securely via TF_VAR_vpn_shared_key, not in this file.
